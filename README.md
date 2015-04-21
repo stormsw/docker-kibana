@@ -1,7 +1,7 @@
-# Kibana 4 in docker origin from [bobrik/kibana](https://github.com/bobrik/docker-kibana4)
+# Kibana 3 in docker origin from [bobrik/kibana](https://github.com/bobrik/docker-kibana4)
 
-This is [kibana 4.0.2](https://github.com/elastic/kibana) based on alpine. Images are tagged by kibana versions.
-It requires at least 1.4.4 elasticsearch server version.
+This is [kibana 3.1.2](https://github.com/elastic/kibana) based on alpine. Images are tagged by kibana versions.
+It requires at least 1.4.0 elasticsearch server version.
 ## Running
 
 ```
