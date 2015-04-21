@@ -1,7 +1,8 @@
 FROM alpine:3.1
 MAINTAINER Alexander Varchenko <alexander.varchenko@gmail.com>
 #latest is 4.1.0-snapshot-linux-x64
-ENV KIBANA_VERSION 4.0.2-linux-x64
+#https://download.elastic.co/kibana/kibana/kibana-3.1.2.tar.gz
+ENV KIBANA_VERSION 3.1.2
 RUN apk --update add curl && \
     mkdir /opt && \
     curl -s https://download.elastic.co/kibana/kibana/kibana-${KIBANA_VERSION}.tar.gz | tar zx -C /opt && \
