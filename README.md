@@ -1,14 +1,14 @@
-# kibana 4 in docker
+# Kibana 4 in docker origin from [bobrik/kibana](https://github.com/bobrik/docker-kibana4)
 
-This is [kibana 4](https://github.com/elastic/kibana) in a minimal 60mb
-docker image. Images are tagged by kibana versions.
-
+This is [kibana 4.0.2](https://github.com/elastic/kibana) based on alpine. Images are tagged by kibana versions.
+It requires at least 1.4.4 elasticsearch server version.
 ## Running
 
 ```
 docker run -d -p <host ip>:<host port>:5601 \
-    -e KIBANA_ES_URL=<elasticsearch url> bobrik/kibana
+    -e ELASTIC_URL=<elasticsearch url> stormsw/kibana
 ```
+elasticsearch url should include protocol prefix, for ex.: http://localhost:9200
 
 You could set `KIBANA_INDEX` env variable to set an index for kibana's data.
 
