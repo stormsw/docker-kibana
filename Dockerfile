@@ -1,6 +1,5 @@
 FROM alpine:3.1
 MAINTAINER Alexander Varchenko <alexander.varchenko@gmail.com>
-#latest is 4.1.0-snapshot-linux-x64
 ENV KIBANA_VERSION 4.0.2-linux-x64
 RUN apk --update add curl && \
     mkdir /opt && \
