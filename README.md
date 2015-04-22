@@ -11,11 +11,3 @@ docker run -d -p <host ip>:<host port>:5601 \
 elasticsearch url should include protocol prefix, for ex.: http://localhost:9200
 
 You could set `KIBANA_INDEX` env variable to set an index for kibana's data.
-
-## No-highlight patch
-
-Kibana has [unresolved issue](https://github.com/elastic/kibana/issues/2782)
-that triggers an error if you use long text fields. This image has
-patch applied that fixes the problem in tags with postfix `-no-highlighting`.
-
-Once issue is resolved, patch will be removed from this image.
